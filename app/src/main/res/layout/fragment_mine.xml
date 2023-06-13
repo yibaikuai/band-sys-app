@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:textSize="30sp"
+            android:text="这里写用户名"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/loveBand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:textSize="25sp"
+            android:text="已关注乐队"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/loveBandList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+</LinearLayout>
